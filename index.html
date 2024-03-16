@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section_draw {
+            background-color: #000;
+        }
+
+        .section_draw .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .section_draw .img_wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        .wrapper_box {
+            position: relative;
+        }
+
+        .main_box {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            padding-top: 50px;
+            max-width: 440px;
+        }
+
+        .heading_seconday {
+            color: white;
+            font-size: 25px;
+            font-family: sans-serif;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .heading_primery {
+            background: #FCD77E;
+            background: linear-gradient(to left, #FCD77E 0%, #C2832D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: sans-serif;
+            font-size: 26px;
+            font-weight: 800;
+            text-align: center;
+            padding: 16px 0px 40px 0px;
+            -webkit-text-stroke-width: 1.3px;
+            -webkit-text-stroke-color: #914f2c;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .box_num {
+            margin-bottom: 35px !important;
+        }
+
+        .box_border {
+
+
+
+            background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 5px, transparent 5px) 0% 0%/12px 12px no-repeat,
+                radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 5px, transparent 5px) 100% 0%/12px 12px no-repeat,
+                radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 5px, transparent 5px) 0% 100%/12px 12px no-repeat,
+                radial-gradient(circle at 0 0, #ffffff 0, #ffffff 5px, transparent 5px) 100% 100%/12px 12px no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 14px) calc(100% - 24px) no-repeat,
+                linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 24px) calc(100% - 14px) no-repeat,
+                linear-gradient(90deg, #c2832d 0%, #fcd77e 100%);
+            border-radius: 12px;
+            padding: 30px 45px 40px 45px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .draw_heading {
+            background: #FCD77E;
+            background: linear-gradient(to left, #FCD77E 0%, #C2832D 100%);
+            font-family: sans-serif;
+            font-size: 27px;
+            font-weight: 800;
+            text-align: center;
+            padding-bottom: 20px;
+            -webkit-text-stroke-width: 1.3px;
+            -webkit-text-stroke-color: #914f2c;
+            -webkit-text-fill-color: transparent;
+            /* -webkit-background-clip: text; */
+            background-clip: text;
+        }
+
+        .box_num input {
+            padding: 16px 10px;
+            border-radius: 40px;
+            width: 100%;
+        }
+
+        .box_ticket button {
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 30px;
+            color: white;
+            background: #af1d22;
+            padding: 13px 0px;
+            border: none;
+            width: 100%;
+            
+        }
+        .box_ticket p{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <Section class="section_draw">
+        <div class="container">
+            <div class="wrapper_box">
+                <img class="img_wrapper" src="/assets/img/bg-dark.jpg" alt="lucky draw box">
+                <div class="main_box">
+
+                    <h4 class="heading_seconday">Welcome to </h4>
+                    <h3 class="heading_primery">
+                        JOHN WALKER & SONS XP 21 CHINESE NEW YEAR 2024 CELEBRATION DINNER
+                    </h3>
+                    <div class="box_num box_border">
+                        <h3 class="draw_heading">
+                            YOUR LUCKY DRAW NUMBER
+                        </h3>
+                        <input type="number" name="" id="">
+
+                    </div>
+                    <div class="box_ticket box_border">
+                        <h3 class="draw_heading">
+                            THIS IS YOUR DOOR GIFT TICKET </h3>
+                        <button>I have redeemed my door gift</button>
+                        <p>
+                            Please note that only commitee members/ persons in charge are allowed to press this button
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+</body>
+
+</html>
