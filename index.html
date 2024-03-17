@@ -12,13 +12,20 @@
             box-sizing: border-box;
         }
 
+
         .section_draw {
             background-color: #000;
+
         }
 
         .section_draw .container {
             max-width: 600px;
             margin: auto;
+            background-image: url("assets/img/bg-dark.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
         }
 
         .section_draw .img_wrapper {
@@ -31,7 +38,7 @@
         }
 
         .main_box {
-            position: absolute;
+            /* position: absolute; */
             top: 0px;
             bottom: 0px;
             left: 0px;
@@ -47,9 +54,12 @@
             font-family: sans-serif;
             text-align: center;
             font-weight: 700;
+            font-family: "Niramit", sans-serif;
+
         }
 
         .heading_primery {
+
             background: #FCD77E;
             background: linear-gradient(to left, #FCD77E 0%, #C2832D 100%);
             -webkit-background-clip: text;
@@ -130,14 +140,35 @@
         /* media query */
 
         @media only screen and (max-width: 520px) {
-    .heading_primery {
-      font-size: 20px;
-    }
-    .box_border{
-        padding:29px 20px 35px 20px ;
-    }
-}
-</style>
+            .main_box {
+                max-width: 280px;
+            }
+
+            .heading_primery {
+                font-size: 20px;
+            }
+
+            .box_border {
+                padding: 29px 20px 35px 20px;
+            }
+
+            .draw_heading {
+                font-size: 18px;
+            }
+
+            .box_ticket p {
+                margin-top: 27px;
+            }
+
+            .box_num input {
+                padding: 11px 10px;
+            }
+
+            .box_ticket button {
+                padding: 11px 0px;
+            }
+        }
+    </style>
     </style>
 </head>
 
@@ -145,7 +176,7 @@
     <Section class="section_draw">
         <div class="container">
             <div class="wrapper_box">
-                <img class="img_wrapper" src="./assets/img/bg-dark.jpg" alt="lucky draw box">
+                <!-- <img class="img_wrapper" src="./assets/img/bg-dark.jpg" alt="lucky draw box"> -->
                 <div class="main_box">
                     <div class="main_box_inner">
 
